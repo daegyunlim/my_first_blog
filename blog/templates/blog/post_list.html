@@ -6,16 +6,14 @@
         <div>
             <h1><a href="/">My Django Blog</a></h1>
         </div>
+        
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h2><a hfef="">{{ post.title }}</a></h2>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
 
-        <div>
-            <p>published: 14.0</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aeneanasdlfkjasdlfjasdlfjasldkfjas;ldfk</p>
-        </div>
-        <div>
-            <p>published: asdfsadf</p>
-        </div>
-        <p>Hi there</p>
-        <p>안녕</p>
     </body>
 </html>
